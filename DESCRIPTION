@@ -1,20 +1,23 @@
 Package: scDynamic
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+Title: Inferring dynamic networks from single-cell RNA-seq data
+Version: 0.0.1
+Authors@R: c(person("Tyler", "Grimes", role = c("aut", "cre"),
+                    email = "tyler.grimes@ufl.edu"),
+             person("Somnath", "Datta", role = c("aut")))
+Author: Tyler Grimes [aut, cre],
+  Somnath Datta [aut]
+Maintainer: Tyler Grimes <tyler.grimes@ufl.edu>
+Description: Methods for using diffusion maps to learn the manifold structure and imputing contaminated samples. Dynamic networks are inferred using the pseudo-time ordering given by the first dimension of the diffusion maps. Kernel-based and penalization methods are available for estimating networks at various time points.
+License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Depends: R (>= 3.5.0)
+Imports: 
+    Rcpp,
+    SingleCellExperiment
 Suggests: 
     testthat
 LinkingTo: 
     Rcpp
-Imports: 
-    Rcpp
+

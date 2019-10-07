@@ -4,5 +4,3 @@
 ## usethis namespace: end
 NULL
 
-#' @importFrom SingleCellExperiment
-NULL
